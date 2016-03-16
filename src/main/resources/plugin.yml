@@ -1,0 +1,11 @@
+name: marcerLock
+version: 0.0.0-ALPHA
+author: marcermarc
+main: de.marcermarc.lock.Main
+commands:
+  marcerLock:
+    description: [leer]
+    usage: /marcerLock
+  mL:
+    description: [leer]
+    usage: /mL
