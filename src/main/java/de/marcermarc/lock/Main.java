@@ -23,7 +23,6 @@ public class Main extends JavaPlugin {
 
     private void registerEvents(PluginManager in_PM) {
 
-
         Command c = new Command(controller);
 
     }
