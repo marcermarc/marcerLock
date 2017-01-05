@@ -10,6 +10,7 @@ import org.bukkit.event.inventory.InventoryOpenEvent;
 import org.bukkit.event.inventory.InventoryType;
 import org.bukkit.metadata.FixedMetadataValue;
 import org.bukkit.metadata.MetadataValue;
+import org.bukkit.plugin.Plugin;
 
 import java.util.List;
 import java.util.UUID;
@@ -34,13 +35,11 @@ public class OpenInventory implements Listener {
 
             if (marcerLockOwner.size() == 0) {
 
-// ToDo: owner festlegen
-                block.setMetadata("marcerLockOwner", new FixedMetadataValue(controller.getMain(), player));
-
             } else if (marcerLockOwner.contains(player)) {
-
+                return;
             } else if (marcerLockProtection.contains(ProtectionEnum.NOACCESS)) {
                 inventoryOpenEvent.setCancelled(true);
+                inventoryOpenEvent.getPlayer().sendMessage("§cYou are not allowed to open this Chest");
             } else if (marcerLockProtection.contains(ProtectionEnum.ONLYLOOK)) {
 
             }

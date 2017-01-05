@@ -25,6 +25,7 @@ public class Main extends JavaPlugin {
 
         Command c = new Command(controller);
 
+        this.getCommand("marcerLock").setExecutor(c);
     }
 
     @Override

@@ -1,7 +1,7 @@
 name: marcerLock
 version: 0.0.0-ALPHA
 author: marcermarc
-main: de.marcermarc.lock.Main
+main: de.marcermarc.veinminerminer.Main
 commands:
   marcerLock:
     description: [leer]

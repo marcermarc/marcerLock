@@ -4,6 +4,7 @@ import de.marcermarc.lock.Main;
 
 public class PluginController {
     private ConfigController config;
+    private LockController lock;
     private Main main;
 
     public ConfigController getConfig() {
@@ -12,6 +13,14 @@ public class PluginController {
 
     public void setConfig(ConfigController config) {
         this.config = config;
+    }
+
+    public LockController getLock() {
+        return lock;
+    }
+
+    public void setLock(LockController lock) {
+        this.lock = lock;
     }
 
     public Main getMain() {

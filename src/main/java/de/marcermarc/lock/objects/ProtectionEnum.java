@@ -10,4 +10,6 @@ public enum ProtectionEnum {
     ProtectionEnum(int value) {
         this.value = value;
     }
+
+
 }
